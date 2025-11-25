@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MyBrand — Creative Portfolio</title>
+    <meta
+      name="description"
+      content="A modern, interactive portfolio showcasing projects, skills, and contact information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/BRAND_PROJECT/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav wrap" role="banner">
+        <div class="brand" tabindex="0">MyBrand</div>
+        <nav aria-label="Primary navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="spacer"></div>
+        <div class="controls">
+          <button
+            id="themeToggle"
+            class="btn-ghost"
+            aria-pressed="false"
+            title="Toggle theme"
+          >
+            🌙
+          </button>
+          <button id="resumeBtn" class="btn-ghost" title="Download resume">
+            Resume
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap" id="home">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-left">
+          <div class="eyebrow">Web • UI • Frontend</div>
+          <h1 id="hero-heading" class="hero-title">
+            I design & build delightful interfaces with motion and purpose.
+          </h1>
+          <p class="lead">
+            I build fast, accessible, and visually-rich frontends, focusing on
+            transitions, micro-interactions, and polished UX that delight users.
+          </p>
+          <div class="hero-actions">
+            <button class="btn-primary" id="viewProjects">View Projects</button>
+            <a href="#contact" class="btn-outline" role="button">Hire me</a>
+          </div>
+
+          <div class="cards" aria-hidden="false">
+            <div class="mini-card">
+              <strong>React & Next.js</strong>
+              <span>SPA & SSR</span>
+            </div>
+            <div class="mini-card">
+              <strong>Animations</strong>
+              <span>GSAP, CSS, IntersectionObserver</span>
+            </div>
+            <div class="mini-card">
+              <strong>Design Systems</strong>
+              <span>Figma -> Production</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card" id="heroCard" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+            alt="Decorative collage"
+            loading="eager"
+          />
+        </div>
+      </section>
+
+      <section id="about" class="about" aria-labelledby="about-heading">
+        <div class="profile" aria-hidden="false">
+          <img
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+            alt="Profile picture"
+            style="width: 100%; height: 100%; object-fit: cover; display: block"
+          />
+        </div>
+        <div>
+          <h2 id="about-heading" class="section-title">About Me</h2>
+          <p>
+            I am a front-end developer with a focus on building high-quality UI
+            and motion. I enjoy turning design systems into production-ready
+            components and crafting micro-interactions that make interfaces feel
+            alive.
+          </p>
+
+          <div style="margin-top: 14px">
+            <h3 style="margin-bottom: 8px">Skills</h3>
+            <div class="skills" role="list">
+              <div class="skill" role="listitem">HTML</div>
+              <div class="skill" role="listitem">CSS / SCSS</div>
+              <div class="skill" role="listitem">JavaScript</div>
+              <div class="skill" role="listitem">React</div>
+              <div class="skill" role="listitem">GSAP</div>
+              <div class="skill" role="listitem">Figma</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="section-title">Selected Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article
+            class="project"
+            tabindex="0"
+            data-title="Landing Hero Motion"
+            data-desc="A modern landing page with immersive hero animation and split-screen layout."
+            data-img="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+              alt="Project screenshot"
+            />
+            <h3 style="margin-top: 12px">Landing Hero Motion</h3>
+            <p class="muted">Immersive hero with micro interactions.</p>
+            <div class="tags">
+              <span class="tag">Animation</span><span class="tag">HTML</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article
+            class="project"
+            tabindex="0"
+            data-title="Design System Kit"
+            data-desc="A reusable component library and design tokens implemented in React."
+            data-img="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+              alt="Project screenshot"
+            />
+            <h3 style="margin-top: 12px">Design System Kit</h3>
+            <p class="muted">Tokens, components and documentation site.</p>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">Design</span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article
+            class="project"
+            tabindex="0"
+            data-title="E‑commerce UI"
+            data-desc="Responsive product grid and animated checkout flow."
+            data-img="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+              alt="Project screenshot"
+            />
+            <h3 style="margin-top: 12px">E‑commerce UI</h3>
+            <p class="muted">A polished shopping experience.</p>
+            <div class="tags">
+              <span class="tag">UX</span><span class="tag">CSS Grid</span>
+            </div>
+          </article>
+
+          <!-- More placeholders -->
+          <article
+            class="project"
+            tabindex="0"
+            data-title="Interactive Resume"
+            data-desc="Animated timeline and printable resume."
+            data-img="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+              alt="Project screenshot"
+            />
+            <h3 style="margin-top: 12px">Interactive Resume</h3>
+            <p class="muted">Timeline with printable export.</p>
+            <div class="tags">
+              <span class="tag">JS</span><span class="tag">Accessibility</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Modal (hidden by default) -->
+      <div
+        id="modal"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-hidden="true"
+      >
+        <div class="modal-card" role="document">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 10px;
+            "
+          >
+            <strong id="modalTitle">Project</strong>
+            <button id="closeModal" class="btn-ghost" aria-label="Close modal">
+              ✕
+            </button>
+          </div>
+          <div class="modal-grid">
+            <div>
+              <img
+                id="modalImg"
+                src=""
+                alt="Project large"
+                style="
+                  width: 100%;
+                  height: 320px;
+                  object-fit: cover;
+                  border-radius: 8px;
+                  margin-bottom: 10px;
+                "
+              />
+              <p id="modalDesc" style="color: var(--muted)"></p>
+            </div>
+            <aside style="padding-left: 12px">
+              <h4>Project details</h4>
+              <p style="color: var(--muted); margin-bottom: 8px">
+                Technologies: <strong>HTML, CSS, JS</strong>
+              </p>
+              <a
+                id="viewLive"
+                href="#"
+                class="btn-outline"
+                target="_blank"
+                style="opacity: 0.5; pointer-events: none"
+                >View live</a
+              >
+            </aside>
+          </div>
+        </div>
+      </div>
+
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading" class="section-title">Contact</h2>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="row">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+          </div>
+          <div style="margin-top: 12px">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <div class="submit">
+            <button type="submit" class="btn-primary">Send message</button>
+          </div>
+          <div
+            id="formStatus"
+            style="margin-top: 8px; color: var(--muted)"
+          ></div>
+        </form>
+      </section>
+
+      <footer>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+          "
+        >
+          <div>© 2025 MyBrand</div>
+          <div style="color: var(--muted)">
+            Built with care • Accessible • Responsive
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="/BRAND_PROJECT/script.js"></script>
+  </body>
+</html>
